@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>First Directive</title>
+    <meta charset="utf-8">
+    <script src="..\angular.min.js"></script>
+    <script src="main.js"></script>
+  </head>
+  <body>
+    <div ng-app="drinkApp">
+      <div ng-controller="drinkCtrl">
+        <input type="text" ng-model="flavour">
+        <div drink flavour = "{{flavour}}"></div>
+      </div>
+    </div>
+  </body>
+</html>
